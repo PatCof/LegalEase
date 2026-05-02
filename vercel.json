@@ -1,5 +1,10 @@
 {
   "version": 2,
+  "functions": {
+    "backend/gemini_ai.ts": {
+      "runtime": "@vercel/node"
+    }
+  },
     "rewrites": [
     {
       "source": "/api/(.*)",
@@ -7,7 +12,7 @@
     },
     {
       "source": "/(.*)",
-      "destination": "/$1"
+      "destination": "/"
     }
   ],
   "buildCommand": "npm install --prefix backend && npm install --prefix LegalEase && npm run build --prefix LegalEase",
