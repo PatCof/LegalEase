@@ -1,15 +1,11 @@
 {
   "version": 2,
   "functions": {
-    "backend/gemini_ai.ts": {
+    "api/backend/gemini_ai.ts": {
       "runtime": "@vercel/node@24.15.0"
     }
   },
     "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/backend/gemini_ai.ts"
-    },
     {
       "source": "/(.*)",
       "destination": "/"

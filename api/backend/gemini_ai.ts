@@ -34,22 +34,19 @@ app.post('/api/sendUserInput', async (req, res) => {
         model: "gemini-2.5-flash",
         contents: prompt,
     });
-    if (res.status(200)){
         res.status(200).json({
         index: count,
         sender : "ai",
         messageText : response.text,
         time : new Date().toLocaleString()
     });
-    }
-    else{
-        res.status(503).json({
+    
+    res.status(503).json({
         index: count,
         sender: "ai",
         messageText: "Please Try again later. The model is experiencing high demand.",
         time: new Date().toLocaleString()
     });
-    }
 
     counter();
 });

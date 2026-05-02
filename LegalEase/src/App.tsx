@@ -55,8 +55,14 @@ function App() {
       .then((response) => {
         setMessages(prev => [...prev, response.data]);
       })
-      .catch((error) => 
-      setMessages(prev => [...prev, error]))
+      .catch((error) => {
+        setMessages(prev => [...prev, {        
+          index : messages.length,
+          sender: "ai",
+          messageText: "Request failed",
+          time: new Date().toLocaleString()
+        }]);
+      })
       .finally(() => setLoading(false));
     }
     
