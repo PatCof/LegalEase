@@ -10,7 +10,7 @@ const PORT = process.env.PORT!;
 
 let count = 1;
 const app = express();
-app.use(cors());
+app.use(cors({ origin: 'https://legal-ease-beryl.vercel.app', credentials: true }));
 app.use(express.json());
 
 function counter(){
@@ -28,7 +28,7 @@ let aiPrompt = `You analyze, search and summarize Philippine Laws. Using Google 
 The following are what you are supposed to answer: `;
 
 
-app.post('https://legal-ease-patrick-cofreros-projects.vercel.app/sendUserInput', async (req, res) => {
+app.post('https://legal-ease-beryl.vercel.app/sendUserInput', async (req, res) => {
     let prompt = aiPrompt + req.body.content
     const response = await ai.models.generateContent({
         model: "gemini-2.5-flash",

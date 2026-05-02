@@ -49,7 +49,7 @@ function App() {
       setLoading(true);
 
       axios
-      .post('https://legal-ease-patrick-cofreros-projects.vercel.app', {
+      .post('https://legal-ease-beryl.vercel.app', {
         content: submittedInput,
       })
       .then((response) => {

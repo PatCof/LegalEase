@@ -7,7 +7,7 @@
     },
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/$1"
     }
   ],
   "buildCommand": "npm install --prefix backend && npm install --prefix LegalEase && npm run build --prefix LegalEase",
