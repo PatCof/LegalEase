@@ -1,6 +1,15 @@
 {
   "version": 2,
-
+    "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/backend/gemini_ai.ts"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/LegalEase/$1"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
