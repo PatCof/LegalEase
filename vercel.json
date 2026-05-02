@@ -7,7 +7,7 @@
     },
     {
       "source": "/(.*)",
-      "destination": "/LegalEase/$1"
+      "destination": "/"
     }
   ],
   "routes": [
