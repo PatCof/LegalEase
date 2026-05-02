@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "npm install --prefix backend && npm install --prefix LegalEase && npm run build --prefix LegalEase",
+  "buildCommand": "npm install --prefix api/backend && npm install --prefix LegalEase && npm run build --prefix LegalEase",
   "outputDirectory": "LegalEase/dist"
 }
