@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "LegalEase/main.tsx"
     }
   ],
   "buildCommand": "npm install --prefix backend && npm install --prefix LegalEase && npm run build --prefix LegalEase"
