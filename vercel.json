@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/gemini_ai.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/gemini_ai.ts"
+    }
+  ],
+  "buildCommand": "npm install --prefix backend && npm install --prefix LegalEase && npm run build --prefix LegalEase"
+}
