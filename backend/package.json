@@ -19,5 +19,9 @@
   "scripts": {
     "build": "tsc",
     "start": " node gemini_ai.ts"
+  },
+  "engines": {
+    "node": "24.x"
   }
+
 }
