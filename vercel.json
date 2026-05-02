@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "backend/gemini_ai.ts"
+      "dest": "/"
     }
   ],
   "buildCommand": "npm install --prefix backend && npm install --prefix LegalEase && npm run build --prefix LegalEase"
