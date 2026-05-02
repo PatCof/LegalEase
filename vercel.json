@@ -1,16 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "api/backend/sendUserInput.ts": {
-      "runtime": "@vercel/node@24.15.0"
-    }
-  },
-    "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ],
   "buildCommand": "npm install --prefix backend && npm install --prefix LegalEase && npm run build --prefix LegalEase",
   "outputDirectory": "LegalEase/dist"
 }
