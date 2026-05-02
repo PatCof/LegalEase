@@ -58,3 +58,6 @@ app.listen(Number(PORT), 'localhost', ()=>{
     console.log('Server Running on localhost');
 });
 
+
+export default app;
+
