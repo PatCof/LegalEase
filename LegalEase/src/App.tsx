@@ -49,7 +49,7 @@ function App() {
       setLoading(true);
 
       axios
-      .post('/sendUserInput', {
+      .post('/api/sendUserInput', {
         content: submittedInput,
       })
       .then((response) => {

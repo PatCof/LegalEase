@@ -28,7 +28,7 @@ let aiPrompt = `You analyze, search and summarize Philippine Laws. Using Google 
 The following are what you are supposed to answer: `;
 
 
-app.post('/sendUserInput', async (req, res) => {
+app.post('/api/sendUserInput', async (req, res) => {
     let prompt = aiPrompt + req.body.content
     const response = await ai.models.generateContent({
         model: "gemini-2.5-flash",
