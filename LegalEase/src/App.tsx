@@ -49,7 +49,7 @@ function App() {
       setLoading(true);
 
       axios
-      .post('http://localhost:5050/sendUserInput', {
+      .post('https://legal-ease-git-main-patrick-cofreros-projects.vercel.app', {
         content: submittedInput,
       })
       .then((response) => {
