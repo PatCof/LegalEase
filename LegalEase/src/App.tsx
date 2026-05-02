@@ -49,7 +49,7 @@ function App() {
       setLoading(true);
 
       axios
-      .post('https://legal-ease-beryl.vercel.app', {
+      .post('https://legal-ease-beryl.vercel.app/sendUserInput', {
         content: submittedInput,
       })
       .then((response) => {
