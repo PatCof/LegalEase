@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "api/backend/gemini_ai.ts": {
+    "api/backend/sendUserInput.ts": {
       "runtime": "@vercel/node@24.15.0"
     }
   },
