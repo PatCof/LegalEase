@@ -8,7 +8,7 @@
      {
         "src": "LegalEase/package.json",
         "use": "@vercel/static-build",
-        "config": { "distDir": "build" }
+        "config": { "distDir": "dist" }
     }
   ],
   "routes": [
@@ -17,6 +17,6 @@
       "dest": "/"
     }
   ],
-  "buildCommand": "npm install --prefix LegalEase/backend && npm install --prefix LegalEase/LegalEase && npm run build --prefix LegalEase/LegalEase",
-  "outputDirectory": "dist"
+  "buildCommand": "npm install --prefix backend && npm install --prefix LegalEase && npm run build --prefix LegalEase",
+  "outputDirectory": "LegalEase/dist"
 }
