@@ -55,7 +55,7 @@ function App() {
       .then((response) => {
         setMessages(prev => [...prev, response.data]);
       })
-      .catch((error) => {
+      .catch(() => {
         setMessages(prev => [...prev, {        
           index : messages.length,
           sender: "ai",
