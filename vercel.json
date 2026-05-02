@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "backend/gemini_ai.ts": {
-      "runtime": "@vercel/node@latest"
+      "runtime": "@vercel/node@24.15.0"
     }
   },
     "rewrites": [
